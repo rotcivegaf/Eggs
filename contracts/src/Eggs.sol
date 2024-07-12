@@ -9,13 +9,13 @@ interface IUriContract {
     function uri(uint256 id) external view returns (string memory);
 }
 
-contract Fleekeggs is ERC1155, Owned {
+contract Eggs is ERC1155, Owned {
     event SetUriContract(IUriContract uriContract);
     event SetMinZeros(uint256 minZeros);
 
     bytes32 constant private F = 0xF000000000000000000000000000000000000000000000000000000000000000;
-    string public name = "Fleekeggs";
-    string public symbol = "FLEEKG";
+    string public name = "Eggs";
+    string public symbol = "EGGS";
 
     uint256 public minZeros;
     IUriContract public uriContract;
@@ -87,5 +87,4 @@ contract Fleekeggs is ERC1155, Owned {
             }
         }
     }
-
 }

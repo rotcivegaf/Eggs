@@ -3,21 +3,21 @@ pragma solidity ^0.8.13;
 
 import {Test, console} from "forge-std/Test.sol";
 
-import {Fleekeggs} from "../src/Fleekeggs.sol";
+import {Eggs} from "../src/Eggs.sol";
 
-contract FleekeggsTest is Test {
-    Fleekeggs fleekeggs;
+contract EggsTest is Test {
+    Eggs eggs;
 
     address owner = address(0xFF);
     address user = 0x6CA6d1e2D5347Bfab1d91e883F1915560e09129D;
 
     function setUp() public {
         vm.prank(owner);
-        fleekeggs = new Fleekeggs(2);
+        eggs = new Eggs(2);
     }
 
     function test_constructor() public view {
-        assertEq(fleekeggs.owner(), owner);
+        assertEq(eggs.owner(), owner);
     }
 
     function test_mintBatch_four_ids_1() public {
@@ -33,14 +33,14 @@ contract FleekeggsTest is Test {
         nonces[7] = 0x0000000000000000000000000000000000000000000000000000000000000002; // non-zeros
 
         vm.prank(user);
-        fleekeggs.mintBatch(
+        eggs.mintBatch(
             user,
             nonces
         );
 
-        assertEq(fleekeggs.balanceOf(user, 0), 0);
-        assertEq(fleekeggs.balanceOf(user, 1), 4);
-        assertEq(fleekeggs.balanceOf(user, 2), 0);
-        assertEq(fleekeggs.balanceOf(user, 4), 0);
+        assertEq(eggs.balanceOf(user, 0), 0);
+        assertEq(eggs.balanceOf(user, 1), 4);
+        assertEq(eggs.balanceOf(user, 2), 0);
+        assertEq(eggs.balanceOf(user, 4), 0);
     }
 }
