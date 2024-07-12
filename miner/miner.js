@@ -90,7 +90,6 @@ function mine(minZeros, to, userHash, maxZerosType, amount) {
 
   let n = 0;
   let startTimestamp = +Date.now();
-  //let salt = numberToHex(Math.floor(Math.random() * 1e10), { size: 32 });
   for (let i = 0; i < amount; i++) {
     while(true) {
       const salt = numberToHex(Math.floor(Math.random() * 1e14), { size: 32 });
