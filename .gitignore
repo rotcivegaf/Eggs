@@ -1,2 +1,4 @@
 /contracts/out/
 /contracts/cache/solidity-files-cache.json
+/Miner/node_modules
+/Miner/package-lock.json

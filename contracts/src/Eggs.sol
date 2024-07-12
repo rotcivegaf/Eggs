@@ -64,6 +64,7 @@ contract Eggs is ERC1155, Owned {
 
         uint256 amountsLength = amounts.length;
         for (uint256 i = minZeros; i < amountsLength; ++i) {
+            if (amounts[i] == 0 ) continue;
             _mint(
                 to,
                 i - minZeros,
