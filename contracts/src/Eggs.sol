@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-import {Test, console} from "forge-std/Test.sol";
 import { ERC1155 } from "solmate/tokens/ERC1155.sol";
 import { Owned } from "solmate/auth/Owned.sol";
 
