@@ -44,7 +44,7 @@ contract Eggs is ERC1155, Owned {
 
     function mintBatch(
         address to,
-        bytes32[] calldata nonces
+        uint256[] calldata nonces
     ) external {
         uint256 noncesLength = nonces.length;
         uint256[] memory amounts = new uint256[](64);
@@ -52,7 +52,8 @@ contract Eggs is ERC1155, Owned {
         for (uint256 i; i < noncesLength; ++i) {
             uint256 zeros = _countZeros(
                 keccak256(
-                    abi.encodePacked(block.chainid, msg.sender, usersHash[to], to, i, nonces[i])
+                    //abi.encodePacked(block.chainid, address(this), msg.sender, usersHash[to], to, i, nonces[i])
+                    abi.encodePacked(to, usersHash[to], nonces[i])
                 )
             );
             if (zeros >= minZeros) {
@@ -64,7 +65,7 @@ contract Eggs is ERC1155, Owned {
 
         uint256 amountsLength = amounts.length;
         for (uint256 i = minZeros; i < amountsLength; ++i) {
-            if (amounts[i] == 0 ) continue;
+            if (amounts[i] == 0) continue;
             _mint(
                 to,
                 i - minZeros,
