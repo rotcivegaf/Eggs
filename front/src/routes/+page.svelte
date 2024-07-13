@@ -87,7 +87,7 @@
         // @todo this not working as expect, i hack it using a form post
         doStop();
         resetItems();
-        await mintBatch($account, allNonces.map(e => `0x${e}`));
+        await mintBatch($account, allNonces.map(e => `0x${e}`).sort((a,b) => Number(BigInt(a)-BigInt(b))));
     }
 
 	function doStop() {
