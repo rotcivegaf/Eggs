@@ -10,3 +10,6 @@
 [submodule "lib/ERC403"]
 	path = lib/ERC403
 	url = https://github.com/eugenioclrc/ERC403
+[submodule "lib/solmate"]
+	path = lib/solmate
+	url = https://github.com/transmissions11/solmate
