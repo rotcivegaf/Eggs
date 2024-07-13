@@ -40,7 +40,7 @@ cd Eggs/
 
 ## Deployments
 
-- [Eggs Contract = 0x55ee3c0e8ae6c8634be3c3ff90852d838898089a](https://testnet.cyberscan.co/address/0x55ee3c0e8ae6c8634be3c3ff90852d838898089a)
+- Eggs Contract = [0x55ee3c0e8ae6c8634be3c3ff90852d838898089a](https://testnet.cyberscan.co/address/0x55ee3c0e8ae6c8634be3c3ff90852d838898089a)
 
 ## Transactions
 
