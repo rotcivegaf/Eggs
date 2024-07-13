@@ -69,6 +69,11 @@ Types of Eggs
 -   **Crystal Egg**: A transparent egg with multicolored reflections.
 -   **Mystic Egg**: An egg covered in ancient runes, emitting a faint purple glow.
 
+Contracts
+------------
+
+- Arbitrum: [0x3ec5c0a31d779cded116741bc3e0f2713e39ca14](https://sepolia.arbiscan.io/address/0x3ec5c0a31d779cded116741bc3e0f2713e39ca14#code)
+
 TODO
 ------------
 
