@@ -3,12 +3,12 @@ pragma solidity ^0.8.13;
 
 import { ERC1155 } from "solmate/tokens/ERC1155.sol";
 import { Owned } from "solmate/auth/Owned.sol";
-
+import {ERC403} from "ERC403/ERC403.sol";
 interface IUriContract {
     function uri(uint256 id) external view returns (string memory);
 }
 
-contract Eggs is ERC1155, Owned {
+contract Eggs is ERC403, Owned {
     event SetUriContract(IUriContract uriContract);
     event SetMinZeros(uint256 minZeros);
     event ApproveToMint(address sender, address minter, bool value);
