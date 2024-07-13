@@ -2,7 +2,6 @@
     import { modal , account, loadReady} from '$lib/store';
     import {onMount} from 'svelte';
     import { getSalt, mintBatch } from '$lib/contracts.ts';
-    import { mine } from 'viem/actions';
 
     let salt;
     let cores = 0;

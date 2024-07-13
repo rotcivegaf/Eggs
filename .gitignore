@@ -8,3 +8,4 @@
 /front/.svelte-kit/
 node_modules
 /front/rust-egg-miner/
+/front/build/
