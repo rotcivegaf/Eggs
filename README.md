@@ -72,7 +72,6 @@ Types of Eggs
 TODO
 ------------
 
-- [Contracts] Make ERC1155 ids, ERC20
 - [Front] Inventory page
 
 Contributing
