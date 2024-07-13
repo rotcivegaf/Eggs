@@ -40,7 +40,7 @@ cd Eggs/
 
 ## Deployments
 
-- Eggs Contract = [0x55ee3c0e8ae6c8634be3c3ff90852d838898089a](https://testnet.cyberscan.co/address/0x55ee3c0e8ae6c8634be3c3ff90852d838898089a)
+- Eggs Contract: [0x55ee3c0e8ae6c8634be3c3ff90852d838898089a](https://testnet.cyberscan.co/address/0x55ee3c0e8ae6c8634be3c3ff90852d838898089a)
 
 ## Transactions
 
@@ -68,6 +68,14 @@ Types of Eggs
 -   **Golden Egg**: A golden egg with a glowing aura.
 -   **Crystal Egg**: A transparent egg with multicolored reflections.
 -   **Mystic Egg**: An egg covered in ancient runes, emitting a faint purple glow.
+
+TODO
+------------
+
+- [Contracts] Fix DoS attack in `mintBatch` function of **Eggs** contract
+- [Contracts] Fix duplicates nonces attack in `mintBatch` function of **Eggs** contract
+- [Contracts] Make ERC1155 ids, ERC20
+- [Front] Inventory page
 
 Contributing
 ------------
