@@ -1,6 +1,6 @@
 # Eggs Idle Miner
 
-Welcome to Eggs Idle Miner, an innovative idle mining game that combines the engaging elements of idle games with the revolutionary potential of blockchain technology. In this game, players use their PC's processing power to mine unique and rare eggs, each represented as ERC-1155 NFTs.
+Welcome to Eggs Idle Miner, an innovative idle mining game that combines the engaging elements of idle games with the revolutionary potential of blockchain technology. In this game, players use their PC's processing power to mine unique and rare eggs, each represented as [ERC-403](https://github.com/eugenioclrc/ERC403), a way of mixing ERC-1155 and ERC-20 Token Standards.
 
 ## Table of Contents
 
