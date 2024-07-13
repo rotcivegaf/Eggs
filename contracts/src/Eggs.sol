@@ -11,6 +11,7 @@ interface IUriContract {
 contract Eggs is ERC1155, Owned {
     event SetUriContract(IUriContract uriContract);
     event SetMinZeros(uint256 minZeros);
+    event ApproveToMint(address sender, address minter, bool value);
 
     bytes32 constant private F = 0xF000000000000000000000000000000000000000000000000000000000000000;
     string public name = "Eggs";
@@ -19,6 +20,7 @@ contract Eggs is ERC1155, Owned {
     uint256 public minZeros;
     IUriContract public uriContract;
 
+    mapping(address => mapping(address => bool)) public isApprovedToMint;
     mapping(address => bytes32) public usersHash;
 
     constructor (uint256 _minZeros) Owned(msg.sender) {
@@ -42,22 +44,36 @@ contract Eggs is ERC1155, Owned {
         return uriContract.uri(id);
     }
 
+    function approveToMint(address minter, bool value) external {
+        isApprovedToMint[msg.sender][minter] = value;
+        emit ApproveToMint(msg.sender, minter, value);
+    }
+
     function mintBatch(
         address to,
         uint256[] calldata nonces
     ) external {
+        require(msg.sender == to || isApprovedToMint[to][msg.sender], "Sender it's not approved");
+
         uint256 noncesLength = nonces.length;
         uint256[] memory amounts = new uint256[](64);
+        uint256 prevNonce;
 
-        for (uint256 i; i < noncesLength; ++i) {
+        for (uint256 i; i < noncesLength;) {
+            uint256 nonce = nonces[i];
+            require(prevNonce < nonce, "Nonces should be order");
+            prevNonce = nonce;
+
             uint256 zeros = _countZeros(
                 keccak256(
-                    //abi.encodePacked(block.chainid, address(this), msg.sender, usersHash[to], to, i, nonces[i])
-                    abi.encodePacked(to, usersHash[to], nonces[i])
+                    abi.encodePacked(to, usersHash[to], nonce)
                 )
             );
-            if (zeros >= minZeros) {
-                ++amounts[zeros];
+            unchecked {
+                if (zeros >= minZeros) {
+                    ++amounts[zeros];
+                }
+                ++i;
             }
         }
 

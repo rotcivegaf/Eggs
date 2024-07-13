@@ -72,8 +72,6 @@ Types of Eggs
 TODO
 ------------
 
-- [Contracts] Fix DoS attack in `mintBatch` function of **Eggs** contract
-- [Contracts] Fix duplicates nonces attack in `mintBatch` function of **Eggs** contract
 - [Contracts] Make ERC1155 ids, ERC20
 - [Front] Inventory page
 
