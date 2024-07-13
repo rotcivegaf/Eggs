@@ -5,3 +5,6 @@
 /miner/node_modules/
 /miner/package-lock.json
 /out/
+/front/.svelte-kit/
+node_modules
+/front/rust-egg-miner/
