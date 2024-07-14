@@ -4,7 +4,7 @@ import { get } from 'svelte/store';
 
 import { parseAbi } from 'viem'
 
-const CYBER_EGGS = '0x55ee3c0e8ae6c8634be3c3ff90852d838898089a';
+const CYBER_EGGS = '0x3ec5c0a31d779cded116741bc3e0f2713e39ca14';
 
 const abi = parseAbi([
     'function usersHash(address user) view returns (bytes32)',

@@ -51,7 +51,7 @@ cd Eggs/
 ## Usage
 -----
 
-1.  **Start Mining**:
+1.  **Start Mining **:
     -   This demo currently runs using Hardhat, a development environment for Ethereum. You can start the mining process by running the Hardhat node and executing the mining script.
     -   Adjust the number of cores used for mining in the "Cores" section.
 2.  **Claim Your Eggs**:
@@ -67,6 +67,14 @@ Types of Eggs
 -   **Golden Egg**: A golden egg with a glowing aura.
 -   **Crystal Egg**: A transparent egg with multicolored reflections.
 -   **Mystic Egg**: An egg covered in ancient runes, emitting a faint purple glow.
+
+Contracts
+------------
+
+- Arbitrum: [0x3ec5c0a31d779cded116741bc3e0f2713e39ca14](https://sepolia.arbiscan.io/address/0x3ec5c0a31d779cded116741bc3e0f2713e39ca14#code)
+- Scroll: [0x4c21515b92f488a02ac44d8fe2878e00e270a42a](https://sepolia.scrollscan.com/address/0x4c21515b92f488a02ac44d8fe2878e00e270a42a#code)
+- Zircuit: [0x165547bE10567d6188DA6De7fd6BdcCd34F80D60](https://explorer.zircuit.com/address/0x165547bE10567d6188DA6De7fd6BdcCd34F80D60)
+- Morph: [0x165547bE10567d6188DA6De7fd6BdcCd34F80D60](https://explorer-holesky.morphl2.io/address/0x165547bE10567d6188DA6De7fd6BdcCd34F80D60)
 
 TODO
 ------------

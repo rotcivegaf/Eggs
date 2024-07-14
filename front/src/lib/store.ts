@@ -1,25 +1,6 @@
 import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi'
-
-import { defineChain } from "viem";
-const cyberTestnet = defineChain({
-  id: 111557560,
-  name: 'Cyber Testnet',
-  nativeCurrency: {
-    decimals: 18,
-    name: 'Ether',
-    symbol: 'ETH',
-  },
-  rpcUrls: {
-    default: {
-      http: ['https://cyber-testnet.alt.technology/'],
-      //webSocket: ['wss://cyber-testnet.alt.technology/'],
-    },
-  },
-  blockExplorers: {
-    default: { name: 'Explorer', url: 'https://testnet.cyberscan.co/' },
-  },
-});
-
+// import arbitrum sepolia
+import { arbitrumSepolia } from 'viem/chains';
 
 import { reconnect } from '@wagmi/core'
 import { watchAccount, watchChainId, getAccount } from '@wagmi/core'
@@ -49,7 +30,7 @@ export function initWeb3() {
   }
 
   const _config = defaultWagmiConfig({
-    chains: [cyberTestnet], // required
+    chains: [arbitrumSepolia], // required
     projectId, // required
     metadata, // required
     ssr:false,
