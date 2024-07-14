@@ -41,9 +41,11 @@ cd Eggs/
 ## Deployments
 
 - Sepolia Arbiscan Eggs Contract: [0x3Ec5C0A31D779cdEd116741bc3E0f2713E39CA14](https://sepolia.arbiscan.io/address/0x3Ec5C0A31D779cdEd116741bc3E0f2713E39CA14)
-- TX: [0x5703204f4b2065317418d3abb5a3717ae3185caf787a1f6adf75918fd5634d9c](https://sepolia.arbiscan.io/tx/0x5703204f4b2065317418d3abb5a3717ae3185caf787a1f6adf75918fd5634d9c)
+    - TX: [0x5703204f4b2065317418d3abb5a3717ae3185caf787a1f6adf75918fd5634d9c](https://sepolia.arbiscan.io/tx/0x5703204f4b2065317418d3abb5a3717ae3185caf787a1f6adf75918fd5634d9c)
 
 - Sepolia Scroll Eggs Contract: [0x4c21515b92f488a02ac44d8fe2878e00e270a42a](https://sepolia.scrollscan.com/address/0x4c21515b92f488a02ac44d8fe2878e00e270a42a#code)
+    - TX: [0x65a318f733d06b738f3e661c6ccdbfba5a5394fa5b144d4033e3157232ff62ae](https://sepolia.scrollscan.com/tx/0x65a318f733d06b738f3e661c6ccdbfba5a5394fa5b144d4033e3157232ff62ae)
+
 - Zircuit testnet Eggs Contract: [0x165547bE10567d6188DA6De7fd6BdcCd34F80D60](https://explorer.zircuit.com/address/0x165547bE10567d6188DA6De7fd6BdcCd34F80D60)
 - Morph testnet Eggs Contract: [0x165547bE10567d6188DA6De7fd6BdcCd34F80D60](https://explorer-holesky.morphl2.io/address/0x165547bE10567d6188DA6De7fd6BdcCd34F80D60)
 - Polygon Cardona ZKEvm Contract: [0x165547be10567d6188da6de7fd6bdccd34f80d60](https://cardona-zkevm.polygonscan.com/address/0x165547be10567d6188da6de7fd6bdccd34f80d60#code)
@@ -67,14 +69,6 @@ Types of Eggs
 -   **Golden Egg**: A golden egg with a glowing aura.
 -   **Crystal Egg**: A transparent egg with multicolored reflections.
 -   **Mystic Egg**: An egg covered in ancient runes, emitting a faint purple glow.
-
-Contracts
-------------
-
-- Arbitrum: [0x3ec5c0a31d779cded116741bc3e0f2713e39ca14](https://sepolia.arbiscan.io/address/0x3ec5c0a31d779cded116741bc3e0f2713e39ca14#code)
-- Scroll: [0x4c21515b92f488a02ac44d8fe2878e00e270a42a](https://sepolia.scrollscan.com/address/0x4c21515b92f488a02ac44d8fe2878e00e270a42a#code)
-- Zircuit: [0x165547bE10567d6188DA6De7fd6BdcCd34F80D60](https://explorer.zircuit.com/address/0x165547bE10567d6188DA6De7fd6BdcCd34F80D60)
-- Morph: [0x165547bE10567d6188DA6De7fd6BdcCd34F80D60](https://explorer-holesky.morphl2.io/address/0x165547bE10567d6188DA6De7fd6BdcCd34F80D60)
 
 TODO
 ------------
