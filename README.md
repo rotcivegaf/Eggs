@@ -1,6 +1,6 @@
 # Eggs Idle Miner
 
-Welcome to Eggs Idle Miner, an innovative idle mining game that combines the engaging elements of idle games with the revolutionary potential of blockchain technology. In this game, players use their PC's processing power to mine unique and rare eggs, each represented as [ERC-403](https://github.com/eugenioclrc/ERC403), a way of mixing ERC-1155 and ERC-20 Token Standards.
+Welcome to Eggs Idle Miner, an innovative idle mining game that combines the engaging elements of idle games with the revolutionary potential of blockchain technology. In this game, players use their PC's processing power to mine unique and rare eggs, each represented as ERC-1155 NFTs.
 
 ## Table of Contents
 
@@ -40,14 +40,13 @@ cd Eggs/
 
 ## Deployments
 
-- Eggs Contract: [0x55ee3c0e8ae6c8634be3c3ff90852d838898089a](https://testnet.cyberscan.co/address/0x55ee3c0e8ae6c8634be3c3ff90852d838898089a)
+- Sepolia Arbiscan Eggs Contract: [0x3Ec5C0A31D779cdEd116741bc3E0f2713E39CA14](https://sepolia.arbiscan.io/address/0x3Ec5C0A31D779cdEd116741bc3E0f2713E39CA14)
+- TX: [0x5703204f4b2065317418d3abb5a3717ae3185caf787a1f6adf75918fd5634d9c](https://sepolia.arbiscan.io/tx/0x5703204f4b2065317418d3abb5a3717ae3185caf787a1f6adf75918fd5634d9c)
 
-## Transactions
-
-- [0xa4e926e7253ba2a875445b59787091399ba149d9dc852558073dbe11cf31774a](https://testnet.cyberscan.co/tx/0xa4e926e7253ba2a875445b59787091399ba149d9dc852558073dbe11cf31774a)
-- [0x02f49e8ea56707d18617af0e915b33056a7c8f7c0a104acda61e7f48140f5c87](https://testnet.cyberscan.co/tx/0x02f49e8ea56707d18617af0e915b33056a7c8f7c0a104acda61e7f48140f5c87)
-- [0x003ec164330bee7d29d2de43a7368ab21450eac3e8b7e122d49a91f70e6499a6](https://testnet.cyberscan.co/tx/0x003ec164330bee7d29d2de43a7368ab21450eac3e8b7e122d49a91f70e6499a6)
-- [0x958ca5a27eb184fc5f219cf673b39027dc7bc8e87d711feee92275561ad6d15b](https://testnet.cyberscan.co/tx/0x958ca5a27eb184fc5f219cf673b39027dc7bc8e87d711feee92275561ad6d15b)
+- Sepolia Scroll Eggs Contract: [0x4c21515b92f488a02ac44d8fe2878e00e270a42a](https://sepolia.scrollscan.com/address/0x4c21515b92f488a02ac44d8fe2878e00e270a42a#code)
+- Zircuit testnet Eggs Contract: [0x165547bE10567d6188DA6De7fd6BdcCd34F80D60](https://explorer.zircuit.com/address/0x165547bE10567d6188DA6De7fd6BdcCd34F80D60)
+- Morph testnet Eggs Contract: [0x165547bE10567d6188DA6De7fd6BdcCd34F80D60](https://explorer-holesky.morphl2.io/address/0x165547bE10567d6188DA6De7fd6BdcCd34F80D60)
+- Polygon Cardona ZKEvm Contract: [0x165547be10567d6188da6de7fd6bdccd34f80d60](https://cardona-zkevm.polygonscan.com/address/0x165547be10567d6188da6de7fd6bdccd34f80d60#code)
 
 ## Usage
 -----
