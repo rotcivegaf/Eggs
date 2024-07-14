@@ -52,7 +52,7 @@ cd Eggs/
 ## Usage
 -----
 
-1.  **Start Mining**:
+1.  **Start Mining **:
     -   This demo currently runs using Hardhat, a development environment for Ethereum. You can start the mining process by running the Hardhat node and executing the mining script.
     -   Adjust the number of cores used for mining in the "Cores" section.
 2.  **Claim Your Eggs**:
